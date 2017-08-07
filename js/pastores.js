@@ -100,7 +100,7 @@ $(function() {
         playControl: true,
         dateControl: true,
         sliderControl: true,
-        orientIcons:false,
+        orientIcons:true,
         marker: function (featureData) {
                     return {
                         icon: runnerIcon,

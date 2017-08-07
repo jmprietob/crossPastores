@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cross de los Pastores</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel="stylesheet" type="text/css" />
+    <style>
+    #map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    
+    #title_container {
+		border-radius: 14px 14px 14px 14px;
+		-moz-border-radius: 14px 14px 14px 14px;
+		-webkit-border-radius: 14px 14px 14px 14px;
+		border: 0px solid #000000;
+        z-index: 10000;
+        position: fixed;
+        left: 100px;
+		background: rgba(255, 255, 255, .9); 
+		margin: 30px;
+		padding: 20px;
+    }
+
+    body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+    h1 {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 1.1;
+    }
+	h2 {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.1;
+    }
+
+    .datetimeControl p {
+        margin: 0;
+        font-size: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="title_container">
+        <h1>Cross de los Pastores 2017</h1>
+			<h2 id="max"></h2>
+			<h2 id="min"></h2>
+			<h2 id="gain"></h2>
+		</div>
+    
+    <div id="map"></div>
+
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet-src.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.3.1/gpx.min.js"></script>
+    <script src="./js/LeafletPlayback.js"></script>
+    <script src="./js/datosGPS.js"></script>
+    <script src="./js/pastores.js"></script>  
+
+</body>
+</html>
